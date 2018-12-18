@@ -7,7 +7,7 @@ This is a mashup of the original settings for NewMatter's MOD-t 3dPrinter by [en
 ### 1. Copy Files
 
 - Place `modt.def.json` into `resources/definitions`
-- Place `modt_platform.stl` into `resources/meshes`
+- Place `modt_platform.stl` into `resources/meshes`
 
 On OSX you find the `resources` folder when clicking right on CURA, `Show Package Contents` and then navigating to `Contents/Resources`. On Windows it should be under `Program files\Cura 3.x\`.
 
