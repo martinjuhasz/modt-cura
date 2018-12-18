@@ -1,0 +1,64 @@
+{
+  "id": "modt",
+  "version": 2,
+  "name": "MODt",
+  "inherits": "fdmprinter",
+  "metadata": {
+    "visible": true,
+    "author": "Martin Juhasz",
+    "manufacturer": "New Matter",
+    "category": "Other",
+    "file_formats": "text/x-gcode",
+    "platform": "modt_platform.stl"
+  },
+
+  "overrides": {
+    "machine_name": { "default_value": "MODt" },
+    "machine_width": {
+      "default_value": 155.4
+    },
+    "machine_depth": {
+      "default_value": 104.6
+    },
+    "machine_height": {
+      "default_value": 130
+    },
+    "machine_heated_bed": {
+      "default_value": false
+    },
+    "machine_center_is_zero": {
+      "default_value": true
+    },
+
+    "machine_nozzle_heat_up_speed": {
+      "default_value": 2
+    },
+    "machine_nozzle_cool_down_speed": {
+      "default_value": 2
+    },
+    "gantry_height": {
+      "default_value": 0
+    },
+    "machine_nozzle_offset_x_1": {
+      "default_value": 0
+    },
+    "machine_nozzle_offset_y_1": {
+      "default_value": 0
+    },
+    "machine_nozzle_size": {
+      "default_value": 0.4
+    },
+    "material_diameter": {
+      "default_value": 1.75
+    },
+    "machine_gcode_flavor": {
+      "default_value": "RepRap (Marlin/Sprinter)"
+    },
+    "machine_start_gcode": {
+      "default_value": "G90\nG1 F300 Z1\nG1 F1200 X77 Y15\nG1 F300 Z0.315\nG92 E0\nG1 F2520 X77 Y-35 E4\nG1 F2520 X77.5 Y-35 E4.05\nG1 F2520 X77.5 Y30 E7.4\nG1 F5000 X77.25 Y30\nG92 E0\nG1 F2520 X77.25 Y-35 E4\nG1 F2520 X77.75 Y-35 E4.05\nG1 F2520 X77.75 Y30 E7.4\nG1 F5000 X77 Y0\nG1 F300 Z1\nG1 X0 Y0 F5000\nG92 E0"
+    },
+    "machine_end_gcode": {
+      "default_value": "G92 E0\nG1 F360 E-2\nG1 F300 Z128\nG1 F3000 X0 Y40\nM104 S0;{profile_string}"
+    }
+  }
+}
